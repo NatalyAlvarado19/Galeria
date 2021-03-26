@@ -1,0 +1,59 @@
+/*PARA PC/LAPTOP*/
+body{
+	background-color: #F0B27A;
+}
+
+@media(min-width: 1023px) {
+	 .container {
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: 1fr;
+}
+}
+
+@media(max-width: 1023px) {
+	body { 
+		background-color: #A6A65E;
+	 }
+	 .container {
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr 1fr;
+}
+}
+
+@media(max-width: 682px) {
+	body { 
+		background-color: #A93226;
+	 }
+	 .container {
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+}
+}
+
+@media(max-width: 341px) {
+	body { 
+		background-color:  #34495E;
+	 }
+	 .container {
+	grid-template-columns: 1fr;
+	grid-template-rows:  repeat(8, 1fr);
+}
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat (8, 1fr);
+	/*grid-template-rows: repeat (8, 1fr);*/
+}
+
+.grid-item {
+	height: auto;
+	margin: 3px;
+	text-align: center;
+}
+
+.grid-item img {
+	width: 135px;
+	height: 135px;
+	object-fit:cover;
+}
